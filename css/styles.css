@@ -1,0 +1,751 @@
+/*
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px; 
+}
+*/
+/* 1rem = 10px */
+:root {
+    --color-selected: #a9f0ff;
+    --color-br-selected: #000;
+    --color-agendando-a: #0d6074;
+    --color-agendando-r: #e7303f;
+    --color-agendando-m: #94328a;
+  }
+  .lh-0 {
+      line-height: 0px;
+  }
+  .lh-3 {
+      line-height: 3;
+  }
+  /*
+  body {
+    background-image: linear-gradient(to top, #dfe9f3 0%, #ffffff 100%);
+  }
+  */
+  /*
+  body {
+    font-family: Mija,-apple-system,Arial,BlinkMacSystemFont,roboto slab,droid serif,segoe ui,Ubuntu,Cantarell,Georgia,serif !important;
+  }
+  */
+  main > .container {
+      padding: 70px 15px 60px;
+  }
+  /* Custom */
+  .bg-agendando {
+      background-color: #94328a;
+  }
+  .c-bg-00 {
+      background-color: #d2d2d2!important;
+  }
+  .c-bg-m {
+    background-color: #94328a!important;
+  }
+  .c-bg-a {
+    background-color: #0d6074!important;
+  }
+  .c-bg-r {
+    background-color: #e7303f!important;
+  }
+  .c-shadow {
+    -webkit-box-shadow: 1px 1px 3px #292929;
+    -moz-box-shadow: 1px 1px 3px #292929;
+    box-shadow: 1px 1px 3px #292929;
+  }
+  .mw-600 {
+      max-width: 600px !important;
+      margin: 0 auto;
+  }
+  .mw-800 {
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  .fw-b {
+      font-weight: bold;
+  }
+  .c-p {
+    cursor: pointer;
+  }
+  .c-br-r {
+      border: 2px solid var(--color-agendando-r);
+      padding: 5px;
+      border-radius: 10px;
+  }
+  .c-dg-m {
+      background: rgb(255,255,255);
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(148,50,138,1) 100%);
+  }
+  .c-w-100 {
+    width: 100px;
+  }
+  .c-w-70 {
+    width: 70px;
+  }
+  .c-w-50 {
+    width: 50px;
+  }
+  .c-w-10 {
+    width: 10px;
+  }
+  .c-mw-50 {
+    max-width: 50px;
+  }
+  .c-mw-80 {
+    max-width: 80px;
+  }
+  .c-mw-100 {
+    max-width: 100px;
+  }
+  .c-miw-100 {
+    min-width: 100px;
+  }
+  .c-mh-32 {
+      max-height: 32px;
+  }
+  .c-fs-12 {
+      font-size: 12px;
+  }
+  .c-fs-08 {
+      font-size: 0.8rem;
+  }
+  .c-dgrid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .c-dgrid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+  }
+  @media (max-width: 576px) {
+      .c-dgrid-3 {
+          grid-template-columns: 1fr;
+          row-gap: 30px;
+      }
+  }
+  .c-dgrid-5 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      column-gap: 15px;
+      row-gap: 15px;
+  }
+  @media (max-width: 576px) {
+      .c-dgrid-5 {
+          grid-template-columns: 1fr 1fr;
+      }
+  }
+  .c-dgrid-5-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      column-gap: 15px;
+      row-gap: 15px;
+  }
+  @media (max-width: 576px) {
+      .c-dgrid-5-3 {
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+  }
+  
+  /* Cajas info pagina prestador */
+  .c-info-box {
+      box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+      border-radius: .25rem;
+      background: #fff;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 1rem;
+      min-height: 80px;
+      padding: .5rem;
+      position: relative;
+      width: 100%;
+  }
+  .c-info-box .c-info-box-icon {
+      border-radius: .25rem;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 1.875rem;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      width: 70px;
+  }
+  .c-info-box .c-info-box-content {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-pack: center;
+      justify-content: center;
+      line-height: 120%;
+      -ms-flex: 1;
+      flex: 1;
+      padding: 0 10px;
+  }
+  .c-elevation-1 {
+      box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)!important;
+  }
+  
+  /*
+  .c-flex-3 {
+      gap: 1.5rem;
+  }
+  @media (max-width: 576px) {
+      .c-flex-3 {
+          grid-template-columns: 1fr;
+      }
+  }
+  */
+  /*
+  .c-flex-3 img {
+      max-width: 250px;
+  }
+  */
+  /* Custom */
+  .ctm-menu-abs-right {
+    position: absolute !important;
+    right: 0px !important;
+    left: auto !important;
+    /*left: -100px;*/
+  }
+  .menu-user {
+    color:#e7303f !important;
+  }
+  header .logo {
+      margin: 0px 5px;
+  }
+  header .logo-text {
+      max-height: 45px;
+  }
+  header .navbar-brand {
+    padding: 0px;
+  }
+  .notificacion {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      padding: .5rem 3rem;
+      opacity: 0;
+      transition: opacity .5s ease;
+      border-radius: 10px;
+      border: 1px solid #fff;
+  }
+  .notificacion.visible {
+      z-index: 1500;
+      opacity: 1;
+  }
+  .notificacion.success {
+      background-color: var(--bs-success);
+      color: #fff;
+  }
+  .notificacion.warning {
+      background-color: var(--bs-warning);
+      color: #fff;
+  }
+  .notificacion.info {
+      background-color: var(--bs-info);
+      color: #fff;
+  }
+  .help a i {
+      font-size: 1.5rem;
+  }
+  .help a:focus {
+      outline: none;
+  }
+  .popover .popover-header {
+      background-color: #b2b2b2;
+  }
+  .popover .popover-body {
+      background-color: #f1f1f1;
+  }
+  /*
+  .buscar #resultado .div-img {
+      max-width: 100px;
+  }
+  */
+  
+  /* Paginas */
+  /* INDEX */
+  .index .sec-img {
+      background-image: url(/img/logo-agendando-full.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 450px;
+      position: relative;
+  }
+  .index .sec-img .contenido {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.7);
+      background-color: rgb(0 0 0 / 70%);
+      color: #FFF;
+      padding: 2rem;
+      text-align: center;
+  }
+  /* Registro */
+  .registro .form-register {
+    width: 100%;
+    max-width: 450px;
+    padding: 15px;
+    margin: auto;
+  }
+  /* Login */
+  .login .form-signin form {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+  }
+  body.login .login-with {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+  }
+  .buscar #resultado .servicios {
+    font-size: 13px;
+  }
+  .buscar #resultado .direccion {
+    font-size: 12px;
+  }
+  .buscar #resultado .distancia {
+    font-size: 12px;
+  }
+  .buscar #resultado .direccion i {
+      margin-right: 2px;
+  }
+  .buscar #resultado .direccion i::before {
+    width: 12px;
+    height: 12px;
+  }
+  .buscar #resultado .valoracion {
+      position: absolute;
+      top: 2px;
+      right: 10px;
+      width: auto;
+      display: flex;
+      gap: 5px;
+  }
+  .buscar #resultado .valoracion span {
+      line-height: 1.7rem;
+  }
+  .buscar .info-prestador {
+      position: relative;
+  }
+  .buscar .info-prestador .valoracion {
+      position: absolute;
+      top: -22px;
+      right: 0px;
+      width: auto;
+      display: flex;
+      gap: 5px;
+  }
+  .buscar .info-prestador .valoracion span {
+      line-height: 1.7rem;
+  }  
+  .buscar .grp-tipos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 5px;
+      row-gap: 5px;
+  }
+  /*
+  .buscar .grp-tipos .block {
+      flex: 0 0 50%;
+  }
+  */
+  .buscar .agendando {
+      display: flex;
+  }
+  .buscar .lg {
+      background-image: url('/img/logo-agendando.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 30%;
+      height: 100%;
+  }
+  .buscar .tx {
+      background-image: url('/img/logo-agendando-texto-w.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 70%;
+      height: 100%;
+  }
+  .buscar .btn_tipo_servicio.selected {
+      border: 2px solid var(--color-agendando-a);
+  }
+  .buscar .btn_servicio.selected {
+      border: 2px solid var(--color-agendando-a);
+  }
+  .buscar .buttons-servicios {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+  .agenda-prestador .list-hora {
+      border: 1px solid #bebebe;
+      float: left;
+      padding: 0px 2px;
+      margin-right: 2px;
+      margin-bottom: 2px;
+      font-size: 12px;
+  }
+  .agenda-prestador .list-hora:hover {
+      background-color: aliceblue;
+      cursor: pointer;
+  }
+  .agenda-prestador .html-agendas tr.selected {
+      background-color: var(--color-selected) !important;
+      font-weight: bold;
+  }
+  .datos-prestador label {
+      font-weight: 500;
+  }
+  .prestador .horarios span {
+      float: left;
+      font-size: 1rem;
+      margin: 0px 5px;
+  }
+  .prestador .block-agendas .agenda {
+      border: 2px solid var(--color-agendando-a);
+      border-radius: 10px;
+      padding: 5px 10px;
+      margin-bottom: 0.5rem;
+  }
+  .prestador .block-agendas .ser-nom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .prestador .block-agendas .duracion,
+  .prestador .block-agendas .descripcion {
+      font-size: 0.9rem;
+  }
+  /*
+  .prestador .horarios .dia {
+      float: left;
+      display: block;
+      font-size: 11px;
+  }
+  */
+  .prestador .calendar > div {
+    margin: 0 auto;
+  }
+  .prestador .calendar .ui-state-active {
+      background: var(--color-selected) !important;
+  }
+  .prestador .lista-agenda tr.selected {
+      background-color: var(--color-selected) !important;
+      font-weight: bold;
+  }
+  .prestador .segmentos {
+      overflow: hidden;
+  }
+  .prestador .list-segmentos.tipo-1 .hora {
+      border: 1px solid #bebebe;
+      float: left;
+      padding: 0px 2px;
+      font-size: 16px;
+      margin: 5px 5px;
+      cursor: pointer;
+  }
+  .prestador .list-segmentos.tipo-1 .hora.selected {
+      background: var(--color-selected);
+  }
+  .prestador .list-segmentos.tipo-2 .grp {
+      border: 1px solid #bebebe;
+      float: left;
+      padding: 0px 2px;
+      font-size: 16px;
+      margin: 5px 5px;
+      cursor: pointer;
+  }
+  .prestador .list-segmentos.tipo-2 .grp.selected {
+    background: var(--color-selected);
+  }
+  
+  .prestador .reserva {
+      clear: both;
+      margin-top: 20px;
+  }
+  .prestador .lista-mensajes {
+      max-height: 200px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-right: 5px;
+  }
+  .prestador .lista-mensajes .origen-u {
+      margin-right: 40px;
+  }
+  .prestador .lista-mensajes .origen-p {
+      margin-left: 40px;
+  }
+  .prestador .lista-mensajes .origen-u .mensaje {
+      border-left: 5px solid blue;
+  }
+  .prestador .lista-mensajes .origen-p .mensaje {
+      border-right: 5px solid green;
+  }
+  .prestador .lista-mensajes .fecha {
+      font-size: 0.8rem;
+  }
+  .prestador .lista-valoracion .top {
+      display: flex;
+      justify-content: space-between;
+  }
+  .prestador .lista-valoracion .stars {
+      color: #ffc700;
+  }
+  .prestador .modal-dialog .duracion {
+      font-size: 0.9rem;
+  }
+  .prestador .modal-dialog .descripcion {
+      font-size: 0.9rem;
+      font-style: italic;
+  }
+  .prestador .modal-dialog .sel-agenda {
+      border: 2px solid var(--color-agendando-a);
+      border-radius: 10px;
+      padding: 5px 10px;
+      margin-bottom: 0.5rem;
+  }
+  .prestador .modal-dialog .sel-agenda.selected {
+      background-color: var(--color-selected) !important;
+      font-weight: bold;
+  }
+  .mensajes .list-mensajes .fecha {
+      font-size: 0.8rem;
+  }
+  .mensajes .list-mensajes .origen-u {
+      border-left: 5px solid blue;
+  }
+  .mensajes .list-mensajes .origen-p {
+      border-right: 5px solid green;
+  }
+  .mensajes .lista-mensajes {
+      max-height: 200px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-right: 5px;
+  }
+  .mensajes .lista-mensajes .origen-u {
+      margin-right: 40px;
+  }
+  .mensajes .lista-mensajes .origen-p {
+      margin-left: 40px;
+  }
+  .mensajes .lista-mensajes .origen-u .mensaje {
+      border-left: 5px solid blue;
+      border-radius: 0px 5px 5px 0px;
+  }
+  .mensajes .lista-mensajes .origen-p .mensaje {
+      border-right: 5px solid green;
+      border-radius: 5px 0px 0px 5px;
+  }
+  .mensajes .lista-mensajes .fecha {
+      font-size: 0.8rem;
+  }
+  .mensajes .usuario .origen-p .estado.no-leido {
+      background-color: blue;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      right: 15px;
+      border-radius: 50%;
+  }
+  .mensajes .prestador .origen-u .estado.no-leido {
+      background-color: blue;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      right: 15px;
+      border-radius: 50%;
+  }
+  .agenda .reservas .horario,
+  .agenda .reservas .ubicacion,
+  .agenda .reservas .serv-prof {
+      display: flex;
+  }
+  .agenda .reservas .card.hoy {
+      background-color: #BDECB6;
+  }
+  .agenda .valorar {
+      overflow: hidden;
+  }
+  .agenda .rate {
+      float: left;
+      height: 46px;
+      padding: 0 10px;
+  }
+  .agenda .rate:not(:checked) > input {
+      position:absolute;
+      top:-9999px;
+  }
+  .agenda .rate:not(:checked) > label {
+      float:right;
+      width:1em;
+      overflow:hidden;
+      white-space:nowrap;
+      cursor:pointer;
+      font-size:30px;
+      color:#ccc;
+      margin-right: 10px;
+  }
+  .agenda .rate:not(:checked) > label:before {
+      content: 'â˜… ';
+  }
+  .agenda .rate > input:checked ~ label {
+      color: #ffc700;    
+  }
+  .agenda .rate:not(:checked) > label:hover,
+  .agenda .rate:not(:checked) > label:hover ~ label {
+      color: #deb217;  
+  }
+  .agenda .rate > input:checked + label:hover,
+  .agenda .rate > input:checked + label:hover ~ label,
+  .agenda .rate > input:checked ~ label:hover,
+  .agenda .rate > input:checked ~ label:hover ~ label,
+  .agenda .rate > label:hover ~ input:checked ~ label {
+      color: #c59b08;
+  }
+  
+  .admin-control-prestadores .modal-dialog .datos .rw {
+      display: flex;
+      gap: 10px;
+  }
+  .control-agenda-prestador .fc .fc-col-header-cell-cushion {
+      color: #000;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+  .control-agenda-prestador .html-agendas tr.selected {
+      background-color: var(--color-selected) !important;
+      font-weight: bold;
+  }
+  @media (max-width: 768px) {
+      .control-agenda-prestador .fc .fc-toolbar.fc-header-toolbar {
+          position: relative;
+      }
+      .control-agenda-prestador .fc-toolbar-title {
+          position: absolute;
+          font-size: 1.1em !important;
+          bottom: 0px;
+      }
+  }
+  
+  /* Prestador - Agendar */
+  .agendar .lista-agenda tr.selected {
+      background-color: var(--color-selected) !important;
+      font-weight: bold;
+  }
+  .agendar .calendar > div,
+  .agendar .calendar2 > div {
+      margin: 0 auto;
+  }
+  .agendar .calendar .ui-state-active {
+      background: var(--color-selected) !important;
+  }
+  .agendar .segmentos {
+      overflow: hidden;
+  }
+  .agendar .list-segmentos {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .agendar .list-segmentos.tipo-1 .hora {
+      border: 1px solid #bebebe;
+      float: left;
+      padding: 0px 2px;
+      font-size: 16px;
+      margin: 5px 5px;
+      cursor: pointer;
+  }
+  .agendar .list-segmentos.tipo-1 .hora.selected {
+      background: var(--color-selected);
+  }
+  .agendar .list-segmentos.tipo-2 .grp {
+      border: 1px solid #bebebe;
+      float: left;
+      padding: 0px 2px;
+      font-size: 16px;
+      margin: 5px 5px;
+      cursor: pointer;
+  }
+  .agendar .list-segmentos.tipo-2 .grp.selected {
+    background: var(--color-selected);
+  }
+  .agendar .usuario {
+      display: none;
+  }
+  .agendar .lista-agenda .sel-agenda {
+      border: 2px solid var(--color-agendando-a);
+      border-radius: 10px;
+      padding: 5px 10px;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+  }
+  .agendar .lista-agenda .sel-agenda.selected {
+      background-color: var(--color-selected) !important;
+      font-weight: bold;
+  }
+  .suscripciones .suscripcion {
+      border: 2px solid #e7303f;
+      padding: 5px;
+      border-radius: 10px;
+  }
+  .suscripciones select {
+      background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right center;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+  }
+  .suscripciones select::-ms-expand {
+      display: none; /*Evita que se muestre la flecha por defecto en versiones de IE*/
+  }
+  
+  /* Footer */
+  footer .bi-facebook,
+  footer .bi-twitter,
+  footer .bi-instagram {
+      font-size: 1.5rem;
+  }
+  footer .links {
+      gap: 10px;
+  }
+  /*
+  .footer .container {
+      display: flex;
+      justify-content: space-around;
+  }
+  */
+  /*modal*/
+  .info-prestador .horarios .dia {
+      float: left;
+      display: block;
+  }
+  .info-prestador .horarios span {
+      float: left;
+      margin: 0px 5px;
+  }
+  .info-prestador i {
+      margin-right: 5px;
+  }
+  .toast {
+      left: 50%;
+        bottom: 0;
+      position: fixed;
+      transform: translate(-50%, 0px);
+      z-index: 9999;
+  }
+  
+  
